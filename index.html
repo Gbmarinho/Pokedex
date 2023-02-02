@@ -4,15 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <link rel="stylesheet" type="text/css" href="style.css"> 
     
     <title>a</title>
 </head>
 <body>
-    <main id="Pokedex">
+    <div class="header-parallax">
+        <div class="header-parallax-video">
+          <video class="video-parallax" loop="loop" muted="muted" autoplay="autoplay">
+            <source src="assets/fundo_Trim.mp4"/>
+          </video>    
+        </div>
+        
+      </div>
+    <header id="header-home">
+        <div id="content-header">
 
+          <div class="header-logo">
+            <img class="img-logo" src="assets/International_Pokémon_logo.svg.png" alt="">
+            
+            <div class="headerSectionSearch">
+              <i class="fas fa-search"></i>
+              <input id="searchbar" onkeyup="search_pokemon()" type="text"
+                name="search" placeholder="Search pokemons">
+            </div>
+          </div>
+          <div id="navegacao-geracao">
+            <div class="geracao priGeracao">
+              <p>1° Geração</p>
+            </div>
+            <div class="geracao segGeracao">
+              <p>2° Geração</p>
+            </div>
+            <div class="geracao terGeracao">
+              <p>3° Geração</p>
+            </div>
+            <div class="geracao quaGeracao">
+              <p>4° Geração</p>
+            </div>
+            <div class="geracao quinGeracao">
+              <p>5° Geração</p>
+            </div>
+            <div class="geracao sextaGeracao">
+              <p>6° Geração</p>
+            </div>
+            <div class="geracao setGeracao">
+              <p>7° Geração</p>
+            </div>
+            <div class="geracao oitGeracao">
+              <p>8° Geração</p>
+            </div>
+          </div>
+        </div>
+    </header>
+    <main>
+        <div id="Pokedex">
+          <div id="PrimeiraGeracao">
+
+          </div>
+          <div id="SegundaGeracao">
+            
+          </div>
+          <div id="TerceiraGeracao">
+            
+          </div>
+          <div id="QuartaGeracao">
+            
+          </div>
+          <div id="QuintaGeracao">
+            
+          </div>
+          <div id="SextaGeracao">
+            
+          </div>
+          <div id="SetimaGeracao">
+            
+          </div>
+          <div id="OitavaGeracao">
+            
+          </div>
+          
+          
+        </div>
     </main>
-    
+<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script> 
 <script type="text/javascript" src="../js/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,18 @@
+main{
+    display: flex;
+    justify-content: center;
+}
+#Pokedex{
+    width: 85%;
+}
+#PrimeiraGeracao, #SegundaGeracao, #TerceiraGeracao, #QuartaGeracao, #QuintaGeracao, #SextaGeracao,#SetimaGeracao, #OitavaGeracao{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s;
+}
+#PrimeiraGeracao{
+    opacity: 1;
+}

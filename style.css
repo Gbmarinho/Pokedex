@@ -1,0 +1,39 @@
+@import 'css/header.css';
+@import 'css/main.css';
+*{
+    margin: 0;
+    padding: 0;
+  }
+  a{
+    text-decoration: none;
+  }
+  
+    
+  .video-parallax {
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+  .header-parallax {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    height: auto;
+    width: auto;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -9999;
+  }
+  .header-parallax-video {
+    margin: 0;
+    position: relative;
+    background-color: #E5E3E5;
+   height: 100%;
+  }
+
+
+.img-logo{
+  width: 30vh;
+}

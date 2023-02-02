@@ -1,0 +1,47 @@
+#header-home{
+    display: flex;
+    justify-content: center;
+}
+#content-header{
+    width: 85%;
+    
+    margin: 15px 0;
+}
+.header-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-logo{
+    width: 30vh;
+}
+.headerSectionSearch {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 5px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: white;
+	
+}
+
+input {
+	border: transparent;
+	border-left: 1px solid black;
+	outline: 0px;
+}
+
+#navegacao-geracao{
+    display: flex;
+    justify-content: space-around;
+}
+.geracao{
+    width: 12.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 8vh;
+    cursor: pointer;
+}
