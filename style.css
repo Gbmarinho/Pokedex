@@ -68,6 +68,32 @@ body{
     font-size: 12px;
     height: 5vh;
   }
+  #PrimeiraGeracao, #SegundaGeracao, #TerceiraGeracao, #QuartaGeracao, #QuintaGeracao, #SextaGeracao,#SetimaGeracao, #OitavaGeracao{
+    width: 85%;
+  }
+}
+@media (max-width:570px){
+  .name-pokemon{
+    font-size: 26px;
+  }
+  .type-pokemon{
+    font-size: 18px;
+  }
+}
+@media (max-width:440px){
+  .img-pokemon{
+    padding: 5px 0;
+  }
+  .caixa-pokemon > div{
+    width: 47%;
+  }
+  .name-pokemon{
+    font-size: 24px;
+  }
+  .type-pokemon{
+    font-size: 16px;
+  }
+  
 }
 
 
