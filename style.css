@@ -1,13 +1,17 @@
 @import 'css/header.css';
 @import 'css/main.css';
+@import 'css/pokemons.css';
 *{
     margin: 0;
     padding: 0;
+    
   }
   a{
     text-decoration: none;
   }
-  
+body{
+  background-color: #82B773;
+} 
     
   .video-parallax {
     bottom: 0;
@@ -29,7 +33,7 @@
   .header-parallax-video {
     margin: 0;
     position: relative;
-    background-color: #E5E3E5;
+    background-color: #82B773;
    height: 100%;
   }
 

@@ -17,19 +17,105 @@ async function limpar(alvo) {
     // Remove todos os descendentes da <div id="alvo">
     alvo.innerText = "";
 }
-  
-function createPokemon(data, geracao){
+
+function createPokemonate9(data, geracao, num){
     const div = document.createElement('div');
-    div.innerHTML = `<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png">`
+   
+    
+    var cont = 0;
+    for(j of data.types){
+        cont++;
+    }
+    if(cont == 1){
+        div.innerHTML = `
+        <div class="content-pokemon ${data.types[0].type.name}">
+            <div class="img-pokemon">
+                <div class="circle-img"></div>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png">
+            </div>
+            <div class="infos-pokemon">
+                <p class="num-pokemon">#${num}</p>
+                <p  class="name-pokemon">${data.name}</p>
+                <p  class="type-pokemon">${data.types[0].type.name}</p>
+            </div>
+        </div>
+        `
+    }
+    if(cont == 2){
+        div.innerHTML = `
+        <div class="content-pokemon ${data.types[0].type.name}">
+            <div class="img-pokemon">
+                <div class="circle-img"></div>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png">
+            </div>
+            <div class="infos-pokemon">
+                <p class="num-pokemon">#${num}</p>
+                <p class="name-pokemon">${data.name}</p>
+                <p class="type-pokemon">${data.types[0].type.name} | ${data.types[1].type.name}</p>
+            </div>
+        </div>
+        `
+    }
+        
+    geracao.appendChild(div);
+}
+
+async function createPokemon(data, geracao){
+    const div = document.createElement('div');
+    
+    var cont = 0;
+    for(j of data.types){
+        cont++;
+    }
+    if(cont == 1){
+        div.innerHTML = `
+        <div class="content-pokemon ${data.types[0].type.name}">
+            <div class="img-pokemon">
+                <div class="circle-img"></div>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png">
+            </div>
+            <div class="infos-pokemon">
+                <p class="num-pokemon">#${data.id}</p>
+                <p class="name-pokemon">${data.name}</p>
+                <p class="type-pokemon">${data.types[0].type.name}</p>
+            </div>
+        </div>
+        `
+    }
+    if(cont == 2){
+        div.innerHTML = `
+        <div class="content-pokemon ${data.types[0].type.name}">
+            <div class="img-pokemon">
+                <div class="circle-img"></div>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png">
+            </div>
+            <div class="infos-pokemon">
+                <p class="num-pokemon">#${data.id}</p>
+                <p class="name-pokemon">${data.name}</p>
+                <p class="type-pokemon">${data.types[0].type.name} | ${data.types[1].type.name}</p>
+            </div>
+        </div>
+        `
+    }
     geracao.appendChild(div);
 }
 
 async function getPokemon1geracao(){
     for(let i = 1; i <= 151; i++){
+        
         await fetch(`${baseUrl}` + String(i))
         .then(response => response.json())
         .then(data => {
-            createPokemon(data, PriGeracao);
+            if(i<10){
+                var a = "00"+ String(i)
+                createPokemonate9(data, PriGeracao, a);
+            }if(i>9 && i<100){
+                var a = "0"+ String(i)
+                createPokemonate9(data, PriGeracao, a);
+            }if(i>99){
+                createPokemon(data, PriGeracao);
+            }
+            
         })
         .catch(error => console.error(error))
      }

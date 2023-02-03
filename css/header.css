@@ -1,11 +1,14 @@
 #header-home{
     display: flex;
     justify-content: center;
+    background-color: #7bd6ff;
+    border-bottom: 5px solid rgba(0,0,0,0.4);
+    box-shadow: 60px -16px teal;
 }
 #content-header{
     width: 85%;
     
-    margin: 15px 0;
+    margin: 15px 0 10px 0;
 }
 .header-logo{
     display: flex;
@@ -35,13 +38,28 @@ input {
 #navegacao-geracao{
     display: flex;
     justify-content: space-around;
+    margin-top: 2vh;
+    background-color: white;
 }
 .geracao{
     width: 12.5%;
     display: flex;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 17px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 8vh;
+    height: 7vh;
+    color: #137aaa;
     cursor: pointer;
+    border-right:1px solid #4cabd7;
+    background-color: #7bd6ff;
+    transition: 0.3s;
+}
+.geracao:hover{
+    background-color: rgb(91, 198, 248);
+}
+.noborder{
+    border-right:0 solid red ;
 }

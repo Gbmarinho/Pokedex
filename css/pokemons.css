@@ -1,0 +1,116 @@
+.caixa-pokemon{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 4vh 0;
+    margin-top: 4vh;
+}
+.caixa-pokemon > div{
+    width: 30%;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 38%)
+}
+.img-pokemon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.circle-img{
+    background-color: #ffffff21;
+    border-radius: 180px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.img-pokemon img{
+    width: 125px;
+    height: 125px;
+}
+.infos-pokemon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    gap: 5px;
+    font-family: Roboto;
+}
+
+.poison{
+    background-color: #B97FC9;
+    border-radius: 20px;
+}
+.bug{
+    background-color:  #719F3F;
+    border-radius: 20px;
+}
+
+.grass{
+    background-color: #63BC5A;
+    border-radius: 20px;
+}
+.fairy{
+    background-color: #EC8FE6;
+    border-radius: 20px;
+}
+.normal{
+    background-color: #919AA2;
+    border-radius: 20px;
+}
+.dragon{
+    background-color: #0B6DC3;
+    border-radius: 20px;
+}
+.psychic{
+    background-color: #fa7179;
+    border-radius: 20px;
+}
+.ghost{
+    background-color: #5269AD;
+    border-radius: 20px;
+}
+.ground{
+    background-color: #D97845;
+    border-radius: 20px;
+}
+.steel{
+    background-color: #5A8EA2;
+    border-radius: 20px;
+}
+.fire{
+    background-color: #FF9D55;
+    border-radius: 20px;
+}
+.flying{
+    background-color: #89AAE3;
+    border-radius: 20px;
+}
+.ice{
+    background-color: #73CEC0;
+    border-radius: 20px;
+}
+.electric{
+    background-color: #F4D23C;
+    border-radius: 20px;
+}
+.rock{
+    background-color: #C5B78C;
+    border-radius: 20px;
+}
+.dark{
+    background-color: #5A5465;
+    border-radius: 20px;
+}
+.water{
+    background-color: #87AFD5;
+    border-radius: 20px;
+}
+.fighting{
+    background-color: #CE416B;
+    border-radius: 20px;
+}
+.poison{
+    background-color: #B567CE;
+    border-radius: 20px;
+}
