@@ -194,7 +194,7 @@ async function getPokemon8geracao(){
 
 
 
-$('.oitGeracao').click(function(e){
+$('.oitGeracao').click(async function(e){
     $('#PrimeiraGeracao').css("opacity", "0");
     limpar(PriGeracao)
     $('#SegundaGeracao').css("opacity", "0");
@@ -213,7 +213,7 @@ $('.oitGeracao').click(function(e){
     getPokemon8geracao()
     $('#OitavaGeracao').css("opacity", "1");
 })
-$('.priGeracao').click(function(e){
+$('.priGeracao').click(async function(e){
     $('#SegundaGeracao').css("opacity", "0");
     limpar(SegGeracao)
     $('#TerceiraGeracao').css("opacity", "0");
@@ -225,7 +225,7 @@ $('.priGeracao').click(function(e){
     $('#SextaGeracao').css("opacity", "0");
     limpar(SexGeracao)
     $('#SetimaGeracao').css("opacity", "0");
-    limpar(SetGeracao)
+     limpar(SetGeracao)
     $('#OitavaGeracao').css("opacity", "0");
     limpar(OitGeracao)
 
@@ -233,7 +233,7 @@ $('.priGeracao').click(function(e){
     $('#PrimeiraGeracao').css("opacity", "1");
 })
 
-$('.segGeracao').click(function(e){
+$('.segGeracao').click(async function(e){
     $('#PrimeiraGeracao').css("opacity", "0");
     limpar(PriGeracao)
     $('#TerceiraGeracao').css("opacity", "0");
@@ -253,7 +253,7 @@ $('.segGeracao').click(function(e){
     $('#SegundaGeracao').css("opacity", "1");
 })
 
-$('.terGeracao').click(function(e){
+$('.terGeracao').click(async function(e){
     $('#PrimeiraGeracao').css("opacity", "0");
     limpar(PriGeracao)
     $('#SegundaGeracao').css("opacity", "0");
@@ -272,7 +272,7 @@ $('.terGeracao').click(function(e){
     getPokemon3geracao()
     $('#TerceiraGeracao').css("opacity", "1");
 })
-$('.quaGeracao').click(function(e){
+$('.quaGeracao').click(async function(e){
     $('#PrimeiraGeracao').css("opacity", "0");
     limpar(PriGeracao)
     $('#SegundaGeracao').css("opacity", "0");
@@ -292,7 +292,7 @@ $('.quaGeracao').click(function(e){
     $('#QuartaGeracao').css("opacity", "1");
 })
 
-$('.quinGeracao').click(function(e){
+$('.quinGeracao').click(async function(e){
     $('#PrimeiraGeracao').css("opacity", "0");
     limpar(PriGeracao)
     $('#SegundaGeracao').css("opacity", "0");
@@ -312,7 +312,7 @@ $('.quinGeracao').click(function(e){
     $('#QuintaGeracao').css("opacity", "1");
 })
 
-$('.sextaGeracao').click(function(e){
+$('.sextaGeracao').click(async function(e){
     $('#PrimeiraGeracao').css("opacity", "0");
     limpar(PriGeracao)
     $('#SegundaGeracao').css("opacity", "0");
@@ -331,7 +331,7 @@ $('.sextaGeracao').click(function(e){
     getPokemon6geracao()
     $('#SextaGeracao').css("opacity", "1");
 })
-$('.setGeracao').click(function(e){
+$('.setGeracao').click(async function(e){
     $('#PrimeiraGeracao').css("opacity", "0");
     limpar(PriGeracao)
     $('#SegundaGeracao').css("opacity", "0");
