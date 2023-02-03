@@ -34,7 +34,7 @@ var so = getMobileOperatingSystem();
 if(so == 'iOS')
 {
     $('.ios').css({
-        'background-color': '#F2F2F2'
+        'background': '#F2F2F2'
     });
 }
 async function limpar(alvo) {

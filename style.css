@@ -12,8 +12,11 @@
   }
 body{
   background: url("assets/print_video.png");
+  -webkit-background: url("assets/print_video.png");
   background-attachment: fixed;
+  -webkit-background-attachment: fixed;
   background-position: center;
+  -webkit-background-position: center;
 } 
     
   .video-parallax {
@@ -37,7 +40,7 @@ body{
     margin: 0;
     position: relative;
     background-color: #82B773;
-   height: 100%;
+    height: 100%;
   }
 
 
