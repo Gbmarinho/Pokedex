@@ -10,7 +10,7 @@ main{
 #PrimeiraGeracao, #SegundaGeracao, #TerceiraGeracao, #QuartaGeracao, #QuintaGeracao, #SextaGeracao,#SetimaGeracao, #OitavaGeracao{
     display: flex;
     flex-wrap: wrap;
-    width: 75%;
+    width: 76%;
     position: absolute;
     opacity: 0;
     transition: 0.3s;
