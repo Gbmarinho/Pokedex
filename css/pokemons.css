@@ -36,7 +36,7 @@
     flex-direction: column;
     color: white;
     gap: 5px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     padding-bottom: 15px;
 }
 .name-pokemon{

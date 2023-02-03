@@ -42,7 +42,7 @@ input {
 .geracao{
     width: 12.5%;
     display: flex;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 17px;
     justify-content: center;

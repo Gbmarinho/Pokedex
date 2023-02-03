@@ -1,6 +1,7 @@
 @import 'css/header.css';
 @import 'css/main.css';
 @import 'css/pokemons.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -62,12 +63,13 @@ body{
     height: 5vh;
   }
 }
-@media (max-width:630px){
+@media (max-width:650px){
   .geracao{
     font-weight: 700;
     font-size: 12px;
     height: 5vh;
   }
+  
   #PrimeiraGeracao, #SegundaGeracao, #TerceiraGeracao, #QuartaGeracao, #QuintaGeracao, #SextaGeracao,#SetimaGeracao, #OitavaGeracao{
     width: 85%;
   }
