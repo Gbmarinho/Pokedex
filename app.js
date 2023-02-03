@@ -18,7 +18,7 @@ async function limpar(alvo) {
     alvo.innerText = "";
 }
 
-function createPokemonate9(data, geracao, num){
+async function createPokemonate9(data, geracao, num){
     const div = document.createElement('div');
    
     

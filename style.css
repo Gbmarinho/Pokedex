@@ -10,7 +10,9 @@
     text-decoration: none;
   }
 body{
-  background-color: #82B773;
+  background: url("assets/print_video.png");
+  background-attachment: fixed;
+  background-position: center;
 } 
     
   .video-parallax {
@@ -39,5 +41,13 @@ body{
 
 
 .img-logo{
-  width: 30vh;
+  width: 15vw;
 }
+@media (max-width:780px){
+  .caixa-pokemon > div{
+    width: 45%;
+    
+  }
+}
+
+
