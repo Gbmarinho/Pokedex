@@ -12,7 +12,33 @@ const SexGeracao = document.querySelector('#SextaGeracao');
 const SetGeracao = document.querySelector('#SetimaGeracao');
 const OitGeracao = document.querySelector('#OitavaGeracao');
 
+function isIOS()
+{    
+    var ua = navigator.userAgent.toLowerCase();
 
+    //Lista de dispositivos que acessar
+    var iosArray = ['iphone', 'ipod'];
+
+    var isApple = false;
+
+    //valida seu array
+    iosArray.forEach(function(item){
+
+        if (ua.indexOf(iosArray[item]) != -1)
+        {
+            isApple = true;
+        }
+
+    });
+
+    return isApple;
+}
+if(isIOS())
+{
+    $('.ios').css({
+        'background-color': '#F2F2F2'
+    });
+}
 async function limpar(alvo) {
     // Remove todos os descendentes da <div id="alvo">
     alvo.innerText = "";

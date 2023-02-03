@@ -44,6 +44,8 @@ body{
 .img-logo{
   width: 15vw;
 }
+
+
 @media (max-width:780px){
   .caixa-pokemon > div{
     width: 45%;
