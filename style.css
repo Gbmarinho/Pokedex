@@ -114,7 +114,7 @@ body{
     padding-top: 0;
   }
   .img-pokemon-view .img-pokeaaaa{
-    width: 160px;
+    width: 180px;
   }
  
 }
@@ -183,9 +183,7 @@ body{
       width: 40px;
       height: 40px;
     }
-    .img-pokemon-view .img-pokeaaaa {
-      width: 140px;
-  }
+    
   .barra-status{
     height: 10px;
   }
