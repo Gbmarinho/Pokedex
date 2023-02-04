@@ -57,6 +57,9 @@ body{
   }
 }
 @media (max-width:1000px){
+  .id-background {
+    font-size: 14vw;
+}
   .geracao{
     font-weight: 700;
     font-size: 15px;
@@ -103,11 +106,7 @@ body{
   }
   
 }
-@media (max-width:825px){
-  .id-background{
-    font-size: 7vw;
-  }
-}
+
 @media (max-width:760px){
   .acertando{
     flex-direction: column-reverse;
@@ -183,7 +182,10 @@ body{
       width: 40px;
       height: 40px;
     }
-    
+    .id-background {
+      font-size: 14vw;
+      padding-top: 20px;
+  }
   .barra-status{
     height: 10px;
   }
