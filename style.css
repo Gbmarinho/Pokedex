@@ -168,7 +168,7 @@ body{
 @media (max-width:500px){
   
     .contentView{
-      height: 50%;
+      height: 60%;
     }
     .status-pokemon-name p{
       font-size: 10px;
