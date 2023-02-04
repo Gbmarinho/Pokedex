@@ -109,8 +109,7 @@
     
 }
 .img-pokemon-view .img-pokeaaaa{
-    width: 220px; /* width of container */
-    /* height of container */
+    width: 220px; 
 }
 
 .Pokeview-content{
@@ -137,8 +136,7 @@
     border-radius: 100%;
     transition: 0.3s;
 }
-.id-background h1{
-}
+
 .name-pok-content{
     font-style: normal;
   font-weight: bold;
