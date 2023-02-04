@@ -828,8 +828,16 @@ $('.setGeracao').click(async function(e){
     $('#SetimaGeracao').css("opacity", "1");
 })
 
-
+var cont2 = 0;
 getPokemon1geracao()
-// const response =  fetch(urlAPI + 1, fetchConfig)
-// const arrayJSON =  response.json()
-// console.log(arrayJSON);
+$('.menu').click(function(e){
+    if(cont2 % 2 == 0){
+        $('.clos').css("opacity", "1");
+        $('.menu').css("opacity", "0");
+    }else{
+        $('.clos').css("opacity", "0");
+        $('.menu').css("opacity", "1");
+    }
+    cont2++;
+    
+})

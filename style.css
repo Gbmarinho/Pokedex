@@ -164,7 +164,7 @@ body{
 @media (max-width:500px){
   
     .contentView{
-      height: 65%;
+      height: 480px;
     }
     .status-pokemon-name p{
       font-size: 10px;
@@ -194,6 +194,7 @@ body{
   }
   
 }
+
 @media(max-width:400px){
   @media(max-height:670px){
     .img-pokemon-view .img-pokeaaaa {
@@ -202,6 +203,10 @@ body{
     .id-background {
       font-size: 14vw;
   }
+  .contentView{
+    height: 400px;
+  }
+  
   .name-pok-content{
     font-size: 1.6em;
   }
