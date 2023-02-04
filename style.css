@@ -193,7 +193,7 @@ body{
   .barra-status{
     height: 10px;
   }
-  .status-pokemon-num{
+  .status-pokemon-num p{
     font-size: 10px;
   }
 }
