@@ -114,7 +114,7 @@ body{
     padding-top: 0;
   }
   .img-pokemon-view .img-pokeaaaa{
-    width: 180px;
+    width: 200px;
   }
  
 }
@@ -165,7 +165,7 @@ body{
 @media (max-width:500px){
   
     .contentView{
-      height: 60%;
+      height: 65%;
     }
     .status-pokemon-name p{
       font-size: 10px;
@@ -189,6 +189,32 @@ body{
   }
   .status-pokemon-num p{
     font-size: 10px;
+  }
+  
+}
+@media(max-width:400px){
+  @media(max-height:670px){
+    .img-pokemon-view .img-pokeaaaa {
+      width: 140px;
+  }
+    .id-background {
+      font-size: 14vw;
+  }
+  .name-pok-content{
+    font-size: 1.6em;
+  }
+  .status-pokemon-name p{
+    font-size: 9px;
+  }
+  .barra-status{
+    height: 9px;
+  }
+  .todas-barras-status{
+    gap: 4.05px;
+  }
+  .status-pokemon-num p{
+    font-size: 9px;
+  }
   }
 }
 @media(min-width:1480px){

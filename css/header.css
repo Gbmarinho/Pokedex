@@ -60,3 +60,19 @@ input {
 .noborder{
     border-right:0 solid red ;
 }
+.menu-hamburguer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.menu-header{
+    display: flex;
+    align-items: center;
+}
+.img-menu{
+    width: 30px;
+}
+.close{
+    position: absolute;
+    
+}
