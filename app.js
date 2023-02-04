@@ -11,6 +11,311 @@ const QuinGeracao = document.querySelector('#QuintaGeracao');
 const SexGeracao = document.querySelector('#SextaGeracao');
 const SetGeracao = document.querySelector('#SetimaGeracao');
 const OitGeracao = document.querySelector('#OitavaGeracao');
+const body = document.querySelector('.ios');
+
+function remove(check){
+    var div3 = check.parentNode.parentNode;
+    div3.children[0].remove();
+}
+
+async function createViewPokemon(div,data){
+    const div2 = document.createElement('div');
+    const header  = document.querySelector("#header-home");
+    var height = data.height/10;
+    var weight = data.weight/10;
+    var cont = 0;
+    for(j of data.types){
+        cont++;
+    }
+    if(cont == 1){
+        if(data.id < 10){
+            div2.innerHTML = `
+            <div class="viewPoke" onclick="remove(this)">
+                <div class="contentView view${data.types[0].type.name}">
+                    <div class="Pokeview-content">
+                        <div class="id-background"><h1>#00${data.id}</h1></div>
+                        <div class="img-pokemon-view">
+                            <div class="acertando">
+                                <div class="all-itens-poke">
+                                    <div class="all-itens-poke-pri">
+                                        <img class="img-type" src="assets/img${data.types[0].type.name}.png">
+                                        <div class="poke-name-type">
+                                            <p class="Pokeview-name-type">${data.types[0].type.name}</p>
+                                            <p class="name-pok-content">${data.name}</p>
+                                        </div>
+                                    </div>
+                                    <div class="all-itens-poke-sec">
+                                        <div class="pokealturapeso">
+                                            <p>Altura</p>
+                                            <p>Peso</p>
+                                        </div>
+
+                                        <div class="pokealturapesoresp">
+                                            <p>${height}M</p>
+                                            <p>${weight}KG</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class="img-pokeaaaa" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="status-pokemon">
+                        <div class="status-pokemon-pri">
+                            <p>Status</p>
+                        </div>
+                        <div class="status-pokemon-sec">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `
+        }
+        if(data.id>9 && data.id<100){
+            div2.innerHTML = `
+            <div class="viewPoke" onclick="remove(this)">
+                <div class="contentView view${data.types[0].type.name}">
+                    <div class="Pokeview-content">
+                        <div class="id-background"><h1>#0${data.id}</h1></div>
+                        <div class="img-pokemon-view">
+                            <div class="acertando">
+                            <div class="all-itens-poke">
+                            <div class="all-itens-poke-pri">
+                                <img class="img-type" src="assets/img${data.types[0].type.name}.png">
+                                <div class="poke-name-type">
+                                    <p class="Pokeview-name-type">${data.types[0].type.name}</p>
+                                    <p class="name-pok-content">${data.name}</p>
+                                </div>
+                            </div>
+                            <div class="all-itens-poke-sec">
+                                <div class="pokealturapeso">
+                                    <p>Altura</p>
+                                    <p>Peso</p>
+                                </div>
+
+                                <div class="pokealturapesoresp">
+                                    <p>${height}M</p>
+                                    <p>${weight}KG</p>
+                                </div>
+                            </div>
+                        </div>
+                                <img class="img-pokeaaaa" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status-pokemon">
+                        <div class="status-pokemon-pri">
+                            <p>Status</p>
+                        </div>
+                        <div class="status-pokemon-sec">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `
+        }
+        if(data.id>99){
+            div2.innerHTML = `
+            <div class="viewPoke" onclick="remove(this)">
+                <div class="contentView view${data.types[0].type.name}">
+                    <div class="Pokeview-content">
+                        <div class="id-background"><h1>#${data.id}</h1></div>
+                        <div class="img-pokemon-view">
+                            <div class="acertando">
+                                <div class="all-itens-poke">
+                                    <div class="all-itens-poke-pri">
+                                        <img class="img-type" src="assets/img${data.types[0].type.name}.png">
+                                        <div class="poke-name-type">
+                                            <p class="Pokeview-name-type">${data.types[0].type.name}</p>
+                                            <p class="name-pok-content">${data.name}</p>
+                                        </div>
+                                    </div>
+                                    <div class="all-itens-poke-sec">
+                                        <div class="pokealturapeso">
+                                            <p>Altura</p>
+                                            <p>Peso</p>
+                                        </div>
+
+                                        <div class="pokealturapesoresp">
+                                            <p>${height}M</p>
+                                            <p>${weight}KG</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class="img-pokeaaaa" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status-pokemon">
+                        <div class="status-pokemon-pri">
+                            <p>Status</p>
+                        </div>
+                        <div class="status-pokemon-sec">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `
+        }
+    }else{
+        if(data.id < 10){
+            div2.innerHTML = `
+            <div class="viewPoke" onclick="remove(this)">
+                <div class="contentView view${data.types[0].type.name}">
+                    <div class="Pokeview-content">
+                        <div class="id-background"><h1>#00${data.id}</h1></div>
+                        <div class="img-pokemon-view">
+                            <div class="acertando">
+                                <div class="all-itens-poke">
+                                    <div class="all-itens-poke-pri">
+                                        <img class="img-type" src="assets/img${data.types[0].type.name}.png">
+                                        <img class="img-type" src="assets/img${data.types[1].type.name}.png">
+                                        <div class="poke-name-type">
+                                            <p class="Pokeview-name-type">${data.types[0].type.name} | ${data.types[1].type.name}</p>
+                                            <p class="name-pok-content">${data.name}</p>
+                                        </div>
+                                    </div>
+                                    <div class="all-itens-poke-sec">
+                                        <div class="pokealturapeso">
+                                            <p>Altura</p>
+                                            <p>Peso</p>
+                                        </div>
+
+                                        <div class="pokealturapesoresp">
+                                        <p>${height}M</p>
+                                        <p>${weight}KG</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class="img-pokeaaaa" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status-pokemon">
+                        <div class="status-pokemon-pri">
+                            <p>Status</p>
+                        </div>
+                        <div class="status-pokemon-sec">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `
+        }
+        if(data.id>9 && data.id<100){
+            div2.innerHTML = `
+            <div class="viewPoke" onclick="remove(this)">
+                <div class="contentView view${data.types[0].type.name}">
+                    <div class="Pokeview-content">
+                        <div class="id-background"><h1>#0${data.id}</h1></div>
+                        <div class="img-pokemon-view">
+                            <div class="acertando">
+                            <div class="all-itens-poke">
+                            <div class="all-itens-poke-pri">
+                                <img class="img-type" src="assets/img${data.types[0].type.name}.png">
+                                <img class="img-type" src="assets/img${data.types[1].type.name}.png">
+                                <div class="poke-name-type">
+                                    <p class="Pokeview-name-type">${data.types[0].type.name} | ${data.types[1].type.name}</p>
+                                    <p class="name-pok-content">${data.name}</p>
+                                </div>
+                            </div>
+                            <div class="all-itens-poke-sec">
+                                <div class="pokealturapeso">
+                                    <p>Altura</p>
+                                    <p>Peso</p>
+                                </div>
+
+                                <div class="pokealturapesoresp">
+                                <p>${height}M</p>
+                                <p>${weight}KG</p>
+                                </div>
+                            </div>
+                        </div>
+                                <img class="img-pokeaaaa" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status-pokemon">
+                        <div class="status-pokemon-pri">
+                            <p>Status</p>
+                        </div>
+                        <div class="status-pokemon-sec">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `
+        }
+        if(data.id>99){
+            div2.innerHTML = `
+            <div class="viewPoke" onclick="remove(this)">
+                <div class="contentView view${data.types[0].type.name}">
+                    <div class="Pokeview-content">
+                        <div class="id-background"><h1>#${data.id}</h1></div>
+                        <div class="img-pokemon-view">
+                            <div class="acertando">
+                            <div class="all-itens-poke">
+                            <div class="all-itens-poke-pri">
+                                <img class="img-type" src="assets/img${data.types[0].type.name}.png">
+                                <img class="img-type" src="assets/img${data.types[1].type.name}.png">
+                                <div class="poke-name-type">
+                                    <p class="Pokeview-name-type">${data.types[0].type.name} | ${data.types[1].type.name}</p>
+                                    <p class="name-pok-content">${data.name}</p>
+                                </div>
+                            </div>
+                            <div class="all-itens-poke-sec">
+                                <div class="pokealturapeso">
+                                    <p>Altura</p>
+                                    <p>Peso</p>
+                                </div>
+
+                                <div class="pokealturapesoresp">
+                                <p>${height}M</p>
+                                <p>${weight}KG</p>
+                                </div>
+                            </div>
+                        </div>
+                                <img class="img-pokeaaaa" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status-pokemon">
+                        <div class="status-pokemon-pri">
+                            <p>Status</p>
+                        </div>
+                        <div class="status-pokemon-sec">
+                            <div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `
+        }
+    }
+    
+    
+    // var div3 = div.children[2].children[0];
+    // div3.css("display", "block")
+    body.insertBefore(div2, header);
+    $('.viewPoke').css("display", "flex");
+}
+
+async function mostraPokemon(div, data){
+    await fetch(`${baseUrl}${data}`)
+        .then(response => response.json())
+        .then(data => {
+            createViewPokemon(div, data);    
+        })
+        .catch(error => console.error(error))
+}
 
 function getMobileOperatingSystem() {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
@@ -52,7 +357,7 @@ async function createPokemonate9(data, geracao, num){
     }
     if(cont == 1){
         div.innerHTML = `
-        <div class="content-pokemon ${data.types[0].type.name}">
+        <div class="content-pokemon ${data.types[0].type.name}" onclick="mostraPokemon(this, ${data.id})">
             <div class="img-pokemon">
                 <div class="circle-img"></div>
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png">
@@ -67,7 +372,7 @@ async function createPokemonate9(data, geracao, num){
     }
     if(cont == 2){
         div.innerHTML = `
-        <div class="content-pokemon ${data.types[0].type.name}">
+        <div class="content-pokemon ${data.types[0].type.name}" onclick="mostraPokemon(this, ${data.id})">
             <div class="img-pokemon">
                 <div class="circle-img"></div>
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png">
@@ -93,7 +398,7 @@ async function createPokemon(data, geracao){
     }
     if(cont == 1){
         div.innerHTML = `
-        <div class="content-pokemon ${data.types[0].type.name}">
+        <div class="content-pokemon ${data.types[0].type.name}" onclick="mostraPokemon(this, ${data.id})">
             <div class="img-pokemon">
                 <div class="circle-img"></div>
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png">
@@ -108,7 +413,7 @@ async function createPokemon(data, geracao){
     }
     if(cont == 2){
         div.innerHTML = `
-        <div class="content-pokemon ${data.types[0].type.name}">
+        <div class="content-pokemon ${data.types[0].type.name}" onclick="mostraPokemon(this, ${data.id})">
             <div class="img-pokemon">
                 <div class="circle-img"></div>
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png">
