@@ -193,6 +193,9 @@ body{
   .barra-status{
     height: 10px;
   }
+  .status-pokemon-num{
+    font-size: 10px;
+  }
 }
 @media(min-width:1480px){
     .status-pokemon{
