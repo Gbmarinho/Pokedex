@@ -194,6 +194,23 @@ body{
     height: 10px;
   }
 }
+@media(min-width:1480px){
+    .status-pokemon{
+      padding-bottom: 90px;
+    }
+    .acertando{
+      padding-top: 14vh;
+    }
+    .status-pokemon-pri{
+      font-size: 22px;
+    }
+    .status-pokemon-sec{
+      font-size: 22px;
+    }
+    .barra-status{
+      height: 22.5px;
+    }
+}
 
 
 
