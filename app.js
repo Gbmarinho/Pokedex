@@ -23,6 +23,7 @@ async function createViewPokemon(div,data){
     const header  = document.querySelector("#header-home");
     var height = data.height/10;
     var weight = data.weight/10;
+    // data.stats[0].base_stat
     var cont = 0;
     for(j of data.types){
         cont++;
@@ -66,7 +67,31 @@ async function createViewPokemon(div,data){
                             <p>Status</p>
                         </div>
                         <div class="status-pokemon-sec">
-                            
+                            <div class="status-pokemon-name">
+                                <p>Hp</p>
+                                <p>Ataque</p>
+                                <p>Defesa</p>
+                                <p>Ataque Especial</p>
+                                <p>Defesa Especial</p>
+                                <p>Velocidade</p>
+                            </div>
+                            <div class="todas-barras-status">
+                                <div class="barra-status" style="width:${data.stats[0].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[1].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[2].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[3].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[4].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[5].base_stat}px"></div>
+                            </div>
+
+                            <div class="status-pokemon-num">
+                                <p>${data.stats[0].base_stat}</p>
+                                <p>${data.stats[1].base_stat}</p>
+                                <p>${data.stats[2].base_stat}</p>
+                                <p>${data.stats[3].base_stat}</p>
+                                <p>${data.stats[4].base_stat}</p>
+                                <p>${data.stats[5].base_stat}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -106,11 +131,36 @@ async function createViewPokemon(div,data){
                         </div>
                     </div>
                     <div class="status-pokemon">
+                        
                         <div class="status-pokemon-pri">
                             <p>Status</p>
                         </div>
                         <div class="status-pokemon-sec">
-                            
+                            <div class="status-pokemon-name">
+                                <p>Hp</p>
+                                <p>Ataque</p>
+                                <p>Defesa</p>
+                                <p>Ataque Especial</p>
+                                <p>Defesa Especial</p>
+                                <p>Velocidade</p>
+                            </div>
+                            <div class="todas-barras-status">
+                                <div class="barra-status" style="width:${data.stats[0].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[1].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[2].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[3].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[4].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[5].base_stat}px"></div>
+                            </div>
+
+                            <div class="status-pokemon-num">
+                                <p>${data.stats[0].base_stat}</p>
+                                <p>${data.stats[1].base_stat}</p>
+                                <p>${data.stats[2].base_stat}</p>
+                                <p>${data.stats[3].base_stat}</p>
+                                <p>${data.stats[4].base_stat}</p>
+                                <p>${data.stats[5].base_stat}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -150,11 +200,36 @@ async function createViewPokemon(div,data){
                         </div>
                     </div>
                     <div class="status-pokemon">
+                        
                         <div class="status-pokemon-pri">
                             <p>Status</p>
                         </div>
                         <div class="status-pokemon-sec">
-                            
+                            <div class="status-pokemon-name">
+                                <p>Hp</p>
+                                <p>Ataque</p>
+                                <p>Defesa</p>
+                                <p>Ataque Especial</p>
+                                <p>Defesa Especial</p>
+                                <p>Velocidade</p>
+                            </div>
+                            <div class="todas-barras-status">
+                                <div class="barra-status" style="width:${data.stats[0].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[1].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[2].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[3].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[4].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[5].base_stat}px"></div>
+                            </div>
+
+                            <div class="status-pokemon-num">
+                                <p>${data.stats[0].base_stat}</p>
+                                <p>${data.stats[1].base_stat}</p>
+                                <p>${data.stats[2].base_stat}</p>
+                                <p>${data.stats[3].base_stat}</p>
+                                <p>${data.stats[4].base_stat}</p>
+                                <p>${data.stats[5].base_stat}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -196,11 +271,36 @@ async function createViewPokemon(div,data){
                         </div>
                     </div>
                     <div class="status-pokemon">
+                        
                         <div class="status-pokemon-pri">
                             <p>Status</p>
                         </div>
                         <div class="status-pokemon-sec">
-                            
+                            <div class="status-pokemon-name">
+                                <p>Hp</p>
+                                <p>Ataque</p>
+                                <p>Defesa</p>
+                                <p>Ataque Especial</p>
+                                <p>Defesa Especial</p>
+                                <p>Velocidade</p>
+                            </div>
+                            <div class="todas-barras-status">
+                                <div class="barra-status" style="width:${data.stats[0].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[1].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[2].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[3].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[4].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[5].base_stat}px"></div>
+                            </div>
+
+                            <div class="status-pokemon-num">
+                                <p>${data.stats[0].base_stat}</p>
+                                <p>${data.stats[1].base_stat}</p>
+                                <p>${data.stats[2].base_stat}</p>
+                                <p>${data.stats[3].base_stat}</p>
+                                <p>${data.stats[4].base_stat}</p>
+                                <p>${data.stats[5].base_stat}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -241,11 +341,36 @@ async function createViewPokemon(div,data){
                         </div>
                     </div>
                     <div class="status-pokemon">
+                        
                         <div class="status-pokemon-pri">
                             <p>Status</p>
                         </div>
                         <div class="status-pokemon-sec">
-                            
+                            <div class="status-pokemon-name">
+                                <p>Hp</p>
+                                <p>Ataque</p>
+                                <p>Defesa</p>
+                                <p>Ataque Especial</p>
+                                <p>Defesa Especial</p>
+                                <p>Velocidade</p>
+                            </div>
+                            <div class="todas-barras-status">
+                                <div class="barra-status" style="width:${data.stats[0].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[1].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[2].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[3].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[4].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[5].base_stat}px"></div>
+                            </div>
+
+                            <div class="status-pokemon-num">
+                                <p>${data.stats[0].base_stat}</p>
+                                <p>${data.stats[1].base_stat}</p>
+                                <p>${data.stats[2].base_stat}</p>
+                                <p>${data.stats[3].base_stat}</p>
+                                <p>${data.stats[4].base_stat}</p>
+                                <p>${data.stats[5].base_stat}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -286,12 +411,35 @@ async function createViewPokemon(div,data){
                         </div>
                     </div>
                     <div class="status-pokemon">
+                        
                         <div class="status-pokemon-pri">
                             <p>Status</p>
                         </div>
                         <div class="status-pokemon-sec">
-                            <div>
-                                
+                            <div class="status-pokemon-name">
+                                <p>Hp</p>
+                                <p>Ataque</p>
+                                <p>Defesa</p>
+                                <p>Ataque Especial</p>
+                                <p>Defesa Especial</p>
+                                <p>Velocidade</p>
+                            </div>
+                            <div class="todas-barras-status">
+                                <div class="barra-status" style="width:${data.stats[0].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[1].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[2].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[3].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[4].base_stat}px"></div>
+                                <div class="barra-status" style="width:${data.stats[5].base_stat}px"></div>
+                            </div>
+
+                            <div class="status-pokemon-num">
+                                <p>${data.stats[0].base_stat}</p>
+                                <p>${data.stats[1].base_stat}</p>
+                                <p>${data.stats[2].base_stat}</p>
+                                <p>${data.stats[3].base_stat}</p>
+                                <p>${data.stats[4].base_stat}</p>
+                                <p>${data.stats[5].base_stat}</p>
                             </div>
                         </div>
                     </div>

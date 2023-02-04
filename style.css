@@ -103,6 +103,97 @@ body{
   }
   
 }
+@media (max-width:825px){
+  .id-background{
+    font-size: 7vw;
+  }
+}
+@media (max-width:760px){
+  .acertando{
+    flex-direction: column-reverse;
+    padding-top: 0;
+  }
+  .img-pokemon-view .img-pokeaaaa{
+    width: 160px;
+    height: 140px;
+  }
+  .todas-barras-status{
+
+  }
+}
+@media (max-width:700px){
+  .id-background{
+    font-size: 9vw;
+  }
+  .todas-barras-status{
+    width: 220px;
+  }
+}
+@media (max-width:700px){
+  
+  .status-pokemon{
+    flex-direction: column;
+    padding-bottom: 15px;
+    gap: 10px;
+  }
+  .status-pokemon-name{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8px;
+  }
+  .status-pokemon-num{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8px;
+  }
+  .status-pokemon-num p{
+    font-size: 12px;
+  }
+  .status-pokemon-name p{
+    font-size: 12px;
+  }
+  .barra-status{
+    height: 12px;
+  }
+}
+@media (max-width:565px){
+  .id-background{
+    font-size: 10vw;
+  }
+  .img-type{
+    width: 45px;
+    height: 45px;
+  }
+}
+@media (max-width:500px){
+  
+    .contentView{
+      height: 50%;
+    }
+    .status-pokemon-name p{
+      font-size: 10px;
+    }
+    .todas-barras-status{
+      width: 160px;
+    }
+    .status-pokemon{
+      padding-bottom: 30px;
+    }
+    .name-pok-content{
+      font-size: 1.8em;
+    }
+    .img-type{
+      width: 40px;
+      height: 40px;
+    }
+    .img-pokemon-view .img-pokeaaaa {
+      width: 140px;
+      height: 120px;
+  }
+  .barra-status{
+    height: 10px;
+  }
+}
 
 
 
