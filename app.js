@@ -24,6 +24,13 @@ function busca(){
     input.value = '';
     localStorage.setItem('algumaDataEspecial', texto);
 }
+function busca2(){
+    var input = document.getElementById("searchbar");
+    var texto = input.value.toLowerCase();
+    input.value = '';
+    localStorage.setItem('algumaDataEspecial', texto);
+    window.location.href = "search.html";
+}
 
 $('.busca').click(function(e){
     var input = document.getElementById("searchbar");
@@ -44,7 +51,7 @@ document.addEventListener("keypress", (e) => {
             alert('Digite algo para ser pesquisado');
             
         }else{
-            busca();
+            busca2();
             
         }
     }
