@@ -43,7 +43,12 @@ body{
     background-color: #82B773;
     height: 100%;
   }
- 
+ .buscadoPor{
+  width: 100%;
+  font-family: "Montserrat";
+  margin-top: 1vh;
+  font-size: 11px;
+ }
 
 
 

@@ -25,6 +25,7 @@ main{
     gap: 4.4vh 3vw;
     position: absolute;
     transition: 0.3s;
+    margin-top: 9vh;
 }
 #PrimeiraGeracao{
     opacity: 1;

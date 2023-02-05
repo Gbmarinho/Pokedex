@@ -20,7 +20,7 @@ function remove(check){
 
 function busca(){
     var input = document.getElementById("searchbar");
-    var texto = input.value;
+    var texto = input.value.toLowerCase();
     localStorage.setItem('algumaDataEspecial', texto);
 }
 
