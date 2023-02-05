@@ -571,6 +571,7 @@ async function createPokemon(data, geracao){
 
 async function getPokemon1geracao(){
     var cont13 = 0;
+    
     for(let i = 1; i <= 897; i++){
         await fetch(`${baseUrl}` + String(i))
         .then(response => response.json())

@@ -29,7 +29,7 @@ function busca2(){
     var texto = input.value.toLowerCase();
     input.value = '';
     localStorage.setItem('algumaDataEspecial', texto);
-    window.location.href = "search.html";
+    window.location.assign("search.html");
 }
 
 $('.busca').click(function(e){
