@@ -29,10 +29,11 @@ $('.busca').click(function(e){
     var input = document.getElementById("searchbar");
         var texto = input.value;
         if(texto == ''){
-            alert('Digite algo para ser pesquisado')
+            alert('Digite algo para ser pesquisado');
             e.preventDefault();
         }else{
             busca();  
+            window.location.replace("search.html");
         }
     
 })
@@ -45,8 +46,7 @@ document.addEventListener("keypress", (e) => {
             
         }else{
             busca();
-            var btn = document.querySelector(".redireciona");
-            btn.click();
+            window.location.replace("search.html");
         }
     }
 });
