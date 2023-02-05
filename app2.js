@@ -25,6 +25,7 @@ $('.busca').click(function(e){
         input.value = '';
         if(texto == ''){
             alert('Digite algo para ser pesquisado')
+            e.preventDefault();
         }else{
             busca(texto);  
         }
@@ -35,7 +36,7 @@ document.addEventListener("keypress", (e) => {
         var input = document.getElementById("searchbar");
         var texto = input.value;
         if(texto == ''){
-            alert('Digite algo para ser pesquisado')
+            alert('Digite algo para ser pesquisado');
         }else{
             busca(texto);
         }
