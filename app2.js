@@ -24,7 +24,7 @@ $('.busca').click(function(e){
         var texto = input.value;
         input.value = '';
         if(texto == ''){
-            alert('Digite algo para ser pesquisado')
+            alert('Digite algo para ser pesquisado');
             e.preventDefault();
         }else{
             busca(texto);  
