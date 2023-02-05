@@ -25,13 +25,26 @@ function busca(){
 }
 
 $('.busca').click(function(e){
-    busca();
+    var input = document.getElementById("searchbar");
+        var texto = input.value;
+        if(texto == ''){
+            alert('Digite algo para ser pesquisado')
+        }else{
+            busca();  
+        }
+    
 })
 document.addEventListener("keypress", (e) => {
     if (e.key === "Enter") {
-        busca();
-        var btn = document.querySelector(".redireciona");
-        btn.click();
+        var input = document.getElementById("searchbar");
+        var texto = input.value;
+        if(texto == ''){
+            alert('Digite algo para ser pesquisado')
+        }else{
+            busca();
+            var btn = document.querySelector(".redireciona");
+            btn.click();
+        }
     }
 });
 // document.addEventListener("keypress", function(e) {

@@ -6,7 +6,37 @@ function remove(check){
     var div3 = check.parentNode.parentNode;
     div3.children[0].remove();
 }
+async function limpar(alvo) {
+    // Remove todos os descendentes da <div id="alvo">
+    alvo.innerText = "";
+}
 
+function busca(texto){
+    limpar(PriGeracao);
+    id = texto;
+    getPokemon1geracao();
+}
+$('.busca').click(function(e){
+    var input = document.getElementById("searchbar");
+        var texto = input.value;
+        if(texto == ''){
+            alert('Digite algo para ser pesquisado')
+        }else{
+            busca(texto);  
+        }
+    
+})
+document.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+        var input = document.getElementById("searchbar");
+        var texto = input.value;
+        if(texto == ''){
+            alert('Digite algo para ser pesquisado')
+        }else{
+            busca(texto);
+        }
+    }
+});
 async function createViewPokemon(div,data){
     const div2 = document.createElement('div');
     const header  = document.querySelector("#header-home");
@@ -478,10 +508,7 @@ if(so == 'iOS')
         'background': '#83DCFF'
     });
 }
-async function limpar(alvo) {
-    // Remove todos os descendentes da <div id="alvo">
-    alvo.innerText = "";
-}
+
 
 
 async function createPokemonate9(data, geracao, num){
