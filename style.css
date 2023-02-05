@@ -43,10 +43,6 @@ body{
     background-color: #82B773;
     height: 100%;
   }
-
-
-
-
 @media (max-width:780px){
   .caixa-pokemon > div{
     width: 45%;
