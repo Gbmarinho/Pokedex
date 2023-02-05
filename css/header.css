@@ -20,7 +20,7 @@
   }
 .headerSectionSearch {
 	display: flex;
-	flex-direction: row;
+	flex-direction: row-reverse;
 	align-items: center;
 	gap: 5px;
 	padding: 10px;
@@ -115,6 +115,15 @@ input {
     background-color: #83DCFF;
     cursor: pointer;
     display: none;
+}
+.busca{
+    width: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.headerSectionSearch > a{
+    display: flex;
+    align-items: center;
 }
 .menugeracao{
     border-bottom: 1px solid #4cabd7;

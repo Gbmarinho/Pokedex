@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    
+    <title>Pokedex</title>
+</head>
+<body class="ios">
+    <header id="header-home">
+        <div id="content-header">
+
+          <div class="header-logo">
+            <a href="index.html">
+                <img class="img-logo" src="assets/International_Pokémon_logo.svg.png" alt="">
+            </a>
+            <div class="menu-hamburguer">
+              <div class="headerSectionSearch">
+                <a class="redireciona" href="search.html"><img class="busca" src="assets/busca.png" alt=""></a>
+                <input id="searchbar" onkeyup="search_pokemon()" type="text"
+                  name="search" placeholder="Search pokemons">
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    <main>
+        <div id="Pokedex">
+          <div id="Procurado" class="caixa-pokemon">
+
+          </div>
+        </div>
+    </main>
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script> 
+<script type="text/javascript" src="app2.js"></script>
+</body>
+</html>

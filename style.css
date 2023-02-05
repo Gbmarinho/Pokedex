@@ -43,9 +43,7 @@ body{
     background-color: #82B773;
     height: 100%;
   }
-
-
-
+ 
 
 
 
@@ -95,6 +93,10 @@ body{
   #searchbar{
     width: 140px;
   }
+  #btn-menu{
+    width: 31px;
+    height: 31px;
+  }
 }
 @media (max-width:440px){
   .img-pokemon{
@@ -114,6 +116,10 @@ body{
   }
   #searchbar{
     width: 130px;
+  }
+  #btn-menu{
+    width: 29px;
+    height: 29px;
   }
 }
 
