@@ -830,14 +830,18 @@ $('.setGeracao').click(async function(e){
 
 var cont2 = 0;
 getPokemon1geracao()
-$('.menu').click(function(e){
+$('#btn-menu').click(function(e){
     if(cont2 % 2 == 0){
-        $('.clos').css("opacity", "1");
-        $('.menu').css("opacity", "0");
+        
+        $('.menu-escondido').css("transform", "scaleY(1)");
     }else{
-        $('.clos').css("opacity", "0");
-        $('.menu').css("opacity", "1");
+
+        $('.menu-escondido').css("transform", "scaleY(0)");
     }
-    cont2++;
-    
+    cont2++; 
 })
+
+function animar(){
+    const btn = document.getElementById("btn-menu");
+    btn.classList.toggle('ativar');
+}

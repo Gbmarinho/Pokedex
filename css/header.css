@@ -11,12 +11,13 @@
 }
 .header-logo{
     display: flex;
+    transition: 0.3s;
     justify-content: space-between;
     align-items: center;
 }
 .img-logo{
-    width: 30vh;
-}
+    width: 15vw;
+  }
 .headerSectionSearch {
 	display: flex;
 	flex-direction: row;
@@ -25,12 +26,11 @@
 	padding: 10px;
 	border-radius: 10px;
 	background-color: white;
-	
+	transition: 0.4s;
 }
 
 input {
 	border: transparent;
-	border-left: 1px solid black;
 	outline: 0px;
 }
 
@@ -70,7 +70,7 @@ input {
     align-items: center;
 }
 .img-menu{
-    width: 30px;
+    width: 35px;
     transition: all 0.5s ease-in-out;
     position: absolute;
 }
@@ -78,6 +78,86 @@ input {
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
-.menu-header{
-    width: 30px;
+
+.menu-escondido{
+    position: absolute;
+    top: 60px;
+    width: 100px;
+    z-index: 10;
+    background-color: #83DCFF;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: transform .5s;
+    right: 12px;
+    color: #137aaa;
+    font-family: 'Roboto', sans-serif;
+    display: none;
+    text-align: center;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 38%);
+}
+.linha{
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    display: block;
+    margin: 3px auto;
+    position: relative;
+    transform-origin: center;
+    transition: 0.5s;
+}
+#btn-menu{
+    width: 35px;
+    height: 35px;
+    border: 2px solid #83DCFF;
+    border-radius: 8px;
+    background-color: #83DCFF;
+    cursor: pointer;
+    display: none;
+}
+.menugeracao{
+    border-bottom: 1px solid #4cabd7;
+    width: 85%;
+    margin-left: 7.5%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 3.5vh;
+    transition: 0.3s;
+}
+.menugeracao:hover{
+    background-color: rgb(91, 198, 248);
+}
+.borderno{
+    border-bottom: 0 solid #4cabd7;
+}
+@media(max-width:625px){
+    #navegacao-geracao{
+        display: none;
+    }
+    .menu-escondido{
+        display: block;
+    }
+    .header-logo{
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    #btn-menu{
+        display: block;
+    }
+    .img-logo{
+        width: 18vw;
+        min-width: 82px;
+        min-height: 32px;
+    }
+}
+#btn-menu.ativar .linha:nth-child(1){
+    transform: translateY(5px) rotate(-45deg);
+}
+#btn-menu.ativar .linha:nth-child(3){
+  
+    transform: translateY(-5px) rotate(48deg);
+}
+#btn-menu.ativar .linha:nth-child(2){
+    width: 0;
 }
