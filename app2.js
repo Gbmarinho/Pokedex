@@ -1,4 +1,5 @@
 var id = localStorage.getItem('algumaDataEspecial');
+var cont13 = 0;
 const baseUrl = 'https://pokeapi.co/api/v2/pokemon/';
 const PriGeracao = document.querySelector('#Procurado');
 const body = document.querySelector('.ios');
@@ -14,11 +15,14 @@ async function limpar(alvo) {
 function busca(texto){
     limpar(PriGeracao);
     id = texto.toLowerCase();
+    cont13 =0;
     getPokemon1geracao();
+
 }
 $('.busca').click(function(e){
     var input = document.getElementById("searchbar");
         var texto = input.value;
+        input.value = '';
         if(texto == ''){
             alert('Digite algo para ser pesquisado')
         }else{
@@ -593,6 +597,7 @@ async function createPokemon(data, geracao){
     geracao.appendChild(div);
 }
 
+
 async function getPokemon1geracao(){
     for(let i = 1; i <= 897; i++){
         await fetch(`${baseUrl}` + String(i))
@@ -608,11 +613,19 @@ async function getPokemon1geracao(){
                 }if(i>99){
                     createPokemon(data, PriGeracao);
                 }
+                cont13++;
             }
             
             
         })
         .catch(error => console.error(error))
      }
+     if(cont13 == 0){
+        alert("Nao existe Pokemon com esse nome");
+        window.location.replace("index.html");
+     }
 }
 getPokemon1geracao()
+
+
+

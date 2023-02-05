@@ -21,6 +21,7 @@ function remove(check){
 function busca(){
     var input = document.getElementById("searchbar");
     var texto = input.value.toLowerCase();
+    input.value = '';
     localStorage.setItem('algumaDataEspecial', texto);
 }
 
