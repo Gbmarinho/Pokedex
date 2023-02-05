@@ -1,5 +1,4 @@
 var id = localStorage.getItem('algumaDataEspecial');
-var cont13 = 0;
 const baseUrl = 'https://pokeapi.co/api/v2/pokemon/';
 const PriGeracao = document.querySelector('#Procurado');
 const body = document.querySelector('.ios');
@@ -12,36 +11,7 @@ async function limpar(alvo) {
     alvo.innerText = "";
 }
 
-function busca(texto){
-    limpar(PriGeracao);
-    id = texto.toLowerCase();
-    cont13 =0;
-    getPokemon1geracao();
 
-}
-$('.busca').click(function(e){
-    var input = document.getElementById("searchbar");
-        var texto = input.value;
-        input.value = '';
-        if(texto == ''){
-            alert('Digite algo para ser pesquisado');
-            e.preventDefault();
-        }else{
-            busca(texto);  
-        }
-    
-})
-document.addEventListener("keypress", (e) => {
-    if (e.key === "Enter") {
-        var input = document.getElementById("searchbar");
-        var texto = input.value;
-        if(texto == ''){
-            alert('Digite algo para ser pesquisado');
-        }else{
-            busca(texto);
-        }
-    }
-});
 async function createViewPokemon(div,data){
     const div2 = document.createElement('div');
     const header  = document.querySelector("#header-home");
@@ -600,6 +570,7 @@ async function createPokemon(data, geracao){
 
 
 async function getPokemon1geracao(){
+    var cont13 = 0;
     for(let i = 1; i <= 897; i++){
         await fetch(`${baseUrl}` + String(i))
         .then(response => response.json())
