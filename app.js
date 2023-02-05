@@ -23,7 +23,6 @@ function busca(){
     var texto = input.value.toLowerCase();
     input.value = '';
     localStorage.setItem('algumaDataEspecial', texto);
-    window.location.replace("search.html");
 }
 
 $('.busca').click(function(e){
