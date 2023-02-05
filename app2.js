@@ -1,10 +1,6 @@
 var id = localStorage.getItem('algumaDataEspecial');
 const baseUrl = 'https://pokeapi.co/api/v2/pokemon/';
 const PriGeracao = document.querySelector('#Procurado');
-const buscado = document.querySelector('.buscadoPor');
-buscado.innerHTML = `
-    <h1>Resultado da busca para: <span style="color: #137aaa;">${id}</span></h1>
-`
 const body = document.querySelector('.ios');
 function remove(check){
     var div3 = check.parentNode.parentNode;
@@ -18,9 +14,6 @@ async function limpar(alvo) {
 function busca(texto){
     limpar(PriGeracao);
     id = texto.toLowerCase();
-    buscado.innerHTML = `
-    <h1>Resultado da busca para: <span style="color: #137aaa;">${id}</span></h1>
-`
     getPokemon1geracao();
 }
 $('.busca').click(function(e){
