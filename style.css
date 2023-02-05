@@ -52,6 +52,9 @@ body{
     width: 45%;
     
   }
+  #PrimeiraGeracao, #SegundaGeracao, #TerceiraGeracao, #QuartaGeracao, #QuintaGeracao, #SextaGeracao,#SetimaGeracao, #OitavaGeracao, #Procurado{
+    gap: 2.5vh 3vw;
+  }
 }
 @media (max-width:1000px){
   .id-background {
