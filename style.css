@@ -136,7 +136,7 @@ body{
   .id-background{
     font-size: 9vw;
   }
-  .todas-barras-status{
+  .barra-status{
     width: 220px;
   }
 }
@@ -147,10 +147,8 @@ body{
     padding-bottom: 15px;
     gap: 10px;
   }
-  .status-pokemon-name{
-    display: flex;
-    flex-direction: column;
-    gap: 1.8px;
+  .name-status{
+    width: 105px;
   }
   .status-pokemon-num{
     display: flex;
@@ -163,10 +161,10 @@ body{
   .all-itens-poke-sec p{
     font-size: 12px;
 }
-  .status-pokemon-name p{
+  .status-pokemon-content p{
     font-size: 12px;
   }
-  .barra-status{
+  .barra-branca{
     height: 12px;
   }
 }
@@ -185,17 +183,20 @@ body{
 @media (max-width:500px){
   
     
-    .status-pokemon-name p{
+    .status-pokemon-content p{
       font-size: 10px;
     }
     .all-itens-poke-sec p{
       font-size: 10px;
   }
-    .todas-barras-status{
+    .barra-status{
       width: 160px;
     }
     .status-pokemon{
       padding-bottom: 30px;
+    }
+    .name-status{
+      width: 85px;
     }
     .name-pok-content{
       font-size: 1.5em;
@@ -211,7 +212,7 @@ body{
       font-size: 14vw;
       padding-top: 20px;
   }
-  .barra-status{
+  .barra-branca{
     height: 10px;
   }
   .status-pokemon-num p{
@@ -235,18 +236,16 @@ body{
   .name-pok-content{
     font-size: 1.6em;
   }
-  .status-pokemon-name p{
+  .status-pokemon-content p{
     font-size: 9px;
   }
   .all-itens-poke-sec p{
     font-size: 9px;
 }
-  .barra-status{
+  .barra-branca{
     height: 9px;
   }
-  .todas-barras-status{
-    gap: 4.05px;
-  }
+  
   .status-pokemon-num p{
     font-size: 9px;
   }
@@ -265,7 +264,7 @@ body{
     .status-pokemon-sec{
       font-size: 22px;
     }
-    .barra-status{
+    .barra-branca{
       height: 22.5px;
     }
 }

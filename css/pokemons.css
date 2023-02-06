@@ -161,15 +161,26 @@
 }
 .status-pokemon-sec{
     display: flex;
+    flex-direction: column;
 }
 .status-pokemon-name{
+   
     padding-right: 10px;
 }
-.todas-barras-status{
-    width: 280px;
+.name-status{
+    width: 135px;
+    padding-right: 10px;
+}
+.barra-branca{
+    height: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+.status-pokemon-content{
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    align-items: center;
+}
+.barra-status{
     transition: 0.3s;
 }
 .all-itens-poke{
@@ -190,9 +201,7 @@
     font-weight: 100;
 }
 .barra-status{
-    height: 15px;
-    border-radius: 15px;
-    background-color: white;
+    width: 280px;
 }
 
 
