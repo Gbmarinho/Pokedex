@@ -116,7 +116,7 @@ async function createViewPokemon(div,data){
                         <div class="status-pokemon-sec">
                             <div class="status-pokemon-content">
                                 <p class="name-status">Hp</p>
-                                <div class="barra-status"><div class="barra-branca"  style="width:${data.stats[0].base_stat}px"></div></div>
+                                <div class="barra-status"><div class="barra-branca"  style="width:  ${data.stats[0].base_stat}px"></div></div>
                                 <p class="num-status">${data.stats[0].base_stat}</p>
                             </div>
                             <div class="status-pokemon-content">

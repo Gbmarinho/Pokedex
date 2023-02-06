@@ -259,13 +259,16 @@ body{
       padding-top: 14vh;
     }
     .status-pokemon-pri{
-      font-size: 22px;
+      font-size: 20px;
     }
     .status-pokemon-sec{
-      font-size: 22px;
+      font-size: 20px;
     }
     .barra-branca{
       height: 22.5px;
+    }
+    .name-status{
+      width: 170px;
     }
 }
 
